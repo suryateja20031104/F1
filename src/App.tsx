@@ -6,6 +6,8 @@ import Home from './components/Home/Home.tsx';
 import Stories from './components/Stories/Stories.tsx';
 import News from './components/News/News.tsx';
 import Drivers from './components/Drivers/Drivers.tsx';
+import More from './components/More/More.tsx';
+import Sponsers from './components/Sponsers/Sponsers.tsx';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Stories />
       <News/>
       <Drivers/>
+      <More/>
+      <Sponsers/>
     </>
   );
 }

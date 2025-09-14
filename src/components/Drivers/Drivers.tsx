@@ -49,6 +49,7 @@ const Drivers: React.FC = () => {
                     <h1 style={{ color: "white", padding: "10px", backgroundColor: "transparent" }}>Williams' 'right of review' over sainz penalty successful</h1>
                 </div>
             </div>
+        
         </>
     )
 }   
