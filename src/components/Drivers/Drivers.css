@@ -1,0 +1,45 @@
+.driverscroll {
+    display: flex;
+    overflow-x: auto;
+    width: 100vw;
+    padding: 20px;
+    gap: 10px;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+.drivercontainer {
+    background-color: aqua;
+    flex: 0 0 auto;
+    width: 180px;
+    height: 230px;
+    background-position: top;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.drivercontainer:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.bigImgdown {
+    background-image: url("https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/fom-website/Unlocked2025/discover-unlocked-sep-25.webp");
+    background-size: cover;
+    background-position: center;
+    margin: 60px;
+    height: 700px;
+    border-radius: 15px;
+    display: flex;
+    flex: column;
+    justify-content: left;
+    align-items: end;
+    transition: background-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bigImgdown:hover {
+    background-size: 120%;
+}

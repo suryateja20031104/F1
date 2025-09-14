@@ -5,6 +5,7 @@ import NavbarMiddle from './components/NavbarMiddle/NavbarMiddle.tsx';
 import Home from './components/Home/Home.tsx';
 import Stories from './components/Stories/Stories.tsx';
 import News from './components/News/News.tsx';
+import Drivers from './components/Drivers/Drivers.tsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <Stories />
       <News/>
+      <Drivers/>
     </>
   );
 }

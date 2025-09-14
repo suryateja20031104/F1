@@ -1,17 +1,26 @@
-.storycontainer{
-    background-image: url("https://video.formula1.com/assets/studio-templates/8d7960c4-1ad8-2eb9-dfaa-3a1c52742540/35e3047f-9527-42b7-b212-7b1502655f93/ec5654ce-b67e-ae9e-0437-3a1c527ea098/thumbnail_small.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 350px;
-    width: 240px;
-    border-radius: 8px;
+/* Scrollable container */
+.story-scroll-wrapper {
     display: flex;
-    justify-content: start;
-    align-items: end;
-    margin: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 transparent;
 }
-.storycontainer2{
-    background-image: url("https://video.formula1.com/assets/studio-templates/413f6a0e-d73b-1ac9-e64b-3a1c49c20941/365e684a-89d1-4ff5-849a-9c7710a403bd/8829a7e6-d049-6914-78a7-3a1c49d34b04/thumbnail_small.jpeg");
+
+/* Optional scrollbar customization for Chrome/Edge/Safari */
+.story-scroll-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+.story-scroll-wrapper::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+.story-scroll-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.storycontainer,
+.storycontainer2 {
     background-position: center;
     background-size: cover;
     height: 350px;
@@ -20,5 +29,21 @@
     display: flex;
     justify-content: start;
     align-items: end;
-    margin: 10px;
+    margin-right: 10px;
+    flex: 0 0 auto; /* Prevent shrinking */
+}
+
+.storycontainer {
+    background-image: url("https://video.formula1.com/assets/studio-templates/8d7960c4-1ad8-2eb9-dfaa-3a1c52742540/35e3047f-9527-42b7-b212-7b1502655f93/ec5654ce-b67e-ae9e-0437-3a1c527ea098/thumbnail_small.jpeg");
+}
+
+.storycontainer2 {
+    background-image: url("https://video.formula1.com/assets/studio-templates/413f6a0e-d73b-1ac9-e64b-3a1c49c20941/365e684a-89d1-4ff5-849a-9c7710a403bd/8829a7e6-d049-6914-78a7-3a1c49d34b04/thumbnail_small.jpeg");
+}
+
+.story-title {
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
 }
