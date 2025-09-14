@@ -1,0 +1,33 @@
+.home-heading {
+    font-family: 'Titillium Web', 'Orbitron', 'Arial', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7), 0 0 2px #00bfff;
+    margin: 0;
+    padding: 0 0 0 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 0.3em;
+    text-transform: none;
+    display: block;
+}
+
+.bigImg {
+    background-image: url("https://media.formula1.com/image/upload/t_16by9North/c_lfill,w_3392/q_auto/v1740000000/trackside-images/2025/F1_Grand_Prix_of_Netherlands___Qualifying/2232870367.webp");
+    background-size: cover;
+    background-position: center;
+    margin: 60px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex: column;
+    justify-content: left;
+    align-items: end;
+    transition: background-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bigImg:hover {
+    background-size: 120%;
+}
